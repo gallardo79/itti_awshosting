@@ -1,0 +1,21 @@
+<!-- crear una pagina web con un botón y cada vez que se pulse muestre un contador contar de uno en uno. todo con javascript en línea-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador</title>
+</head>
+<body>
+    <h1>Contador: <span id="contador"></span></h1>
+    <button onclick="contador()">Contar</button>
+   
+    <script>
+        var counter = 0;
+        function contador(){
+            counter++;
+            document.getElementById("contador").innerHTML = counter;
+        }
+    </script>
+
+
+</html>
